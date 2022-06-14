@@ -83,7 +83,23 @@ namespace NotificationUtils.Primitives
              /// <inheritdoc/>
              public override int GetHashCode()
              {
-                 return Type.GetHashCode() ^ Property.GetHashCode();
+                 return Type.FullName.GetHashCode() ^ Property.GetHashCode();
+             }
+
+             /// <summary>
+             /// このキーが比較対象のキーと等価であるかどうかを調べ、等価であれば true、そうでなければ false を返します。
+             /// Type が同一の型を指し、かつ Property が同じ文字列であれば等価とみなします。
+             /// </summary>
+             /// <param name="obj">比較対象のオブジェクト。</param>
+             /// <returns>等価であれば true, そうでなければ false。</returns>
+             public override bool Equals(object obj)
+             {
+                 if (obj is DynamicPropertySetKey key)
+                 {
+                     return key.Type.Equals(this.Type) && key.Property == this.Property;
+                 }
+
+                 return false;
              }
          }
      }
