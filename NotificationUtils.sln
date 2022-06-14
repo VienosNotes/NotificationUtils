@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationUtils.Primitives", "NotificationUtils.Primitives\NotificationUtils.Primitives.csproj", "{2A6D1A2D-4847-4761-A388-381136D18ED6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationObject.Primitives.Tests", "NotificationObject.Primitives.Tests\NotificationObject.Primitives.Tests.csproj", "{C46CD790-153F-4B0D-9A62-853A90C873B0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationUtils.Primitives.Tests", "NotificationUtils.Primitives.Tests\NotificationUtils.Primitives.Tests.csproj", "{C46CD790-153F-4B0D-9A62-853A90C873B0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
