@@ -10,7 +10,7 @@ namespace NotificationUtils.Primitives
      /// </summary>
      public class NotificationObjectBase : INotifyPropertyChanged
      {
-         /// <inheritdoc/>>
+         /// <inheritdoc/>
          public event PropertyChangedEventHandler PropertyChanged;
          
          /// <summary>
